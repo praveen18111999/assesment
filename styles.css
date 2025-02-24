@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.option {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.option.active {
+    border-color: #007f5f;
+    background-color: #e6f9f0;
+}
+
+.option input {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.bundle-name {
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.price {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.discount {
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+
+.most-popular {
+    font-size: 12px;
+    color: green;
+    padding: 3px 6px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 3px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space between price and Most Popular */
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.size-colour {
+    display: none;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.size-colour-heading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.size-colour-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.size-colour select {
+    padding: 5px;
+    width: 45%;
+}
+
+.shipping-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.shipping {
+    color: green;
+    margin: 0;
+}
+
+.total {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background: #007f5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: gray;
+    padding-left: 8px;
+}
